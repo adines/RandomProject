@@ -1,0 +1,9 @@
+test_random_homepage:
+    path:     /
+    defaults: { _controller: TestRandomBundle:Default:index }
+random:
+    path:     /random/{limit}
+    defaults: { _controller: TestRandomBundle:Random:index }
+random2:
+    path:     /random2/{limit1}-{limit2}
+    defaults: { _controller: TestRandomBundle:Random2:index , limit1:0, limit2:1000}
